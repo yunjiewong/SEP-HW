@@ -81,3 +81,5 @@ ORDER BY Name
 SELECT DISTINCT (CAST(ProductSubcategoryID AS nvarchar) + ' '+ Color)
 FROM Production.Product
 WHERE ProductSubcategoryID IS NOT NULL AND Color IS NOT NULL
+
+
