@@ -183,10 +183,16 @@
 
 #### 20. List one city, if exists, that is the city from where the employee sold most orders (not the product quantity) is, and also the city of most total quantity of products ordere from. (tip: join  sub-query)
 
-    SELECT top(1) ShipCity
-    From dbo.Orders 
-    GROUP by ShipCity
-    ORDER by ShipCity desc
+    SELECT top(1) e.city
+    From dbo.Orders o join dbo.[Order Details] od on o.OrderID=od.OrderID
+    join dbo.Employees e on e.EmployeeId = o.EmployeeId
+    where e.city in (
+      SELECT top(1) ShipCity
+      From dbo.Orders 
+      GROUP by ShipCity
+      ORDER by ShipCity desc
+    )
+
 
 
 
