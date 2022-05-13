@@ -118,7 +118,7 @@
     having count(e2.ReportsTo) >2
 
 #### 13.Display the customers and suppliers by city. The results should have the following columns
-    SELECT c.City, c.ContactName, c.CompanyName,'Customers'
+    SELECT c.City, c.ContactName, c.CompanyName,'Customers' [Type]
     From dbo.Customers c 
     UNION
     SELECT s.City, s.ContactName, s.CompanyName,'Suppliers'
