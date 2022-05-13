@@ -94,9 +94,13 @@
     order by [total product] desc
 
 #### 9. List all of the possible ways that suppliers can ship their products. Display the results as below
-    Select s.CompanyName [Supplier Company Name], sh.CompanyName [Shippping Company Name]
-    From dbo.Suppliers s cross join dbo.Shippers sh
-    order by[Supplier Company Name]
+    Select distinct s.CompanyName [Supplier Company Name], sh.CompanyName [Shippping Company Name]
+    From dbo.Suppliers s 
+    JOIN dbo.products p on s.SupplierId = p.SupplierId
+    Join dbo.[order details] od on od.ProductID = p.ProductID
+    Join dbo.orders o on od.orderID = o.orderID
+    JOIN shippers sh on sh.shipperID = o.shipVia
+    ORDER by [Supplier Company Name]
 
 #### 10.Display the products order each day. Show Order date and Product Name.
     SELECT p.ProductName, cast(o.OrderDate as date)[Order date]
