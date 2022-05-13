@@ -105,9 +105,11 @@
     ORDER by o.OrderDate
 
 #### 11.Displays pairs of employees who have the same job title.
-    SELECT e1.FirstName +' '+ e1.LastName as employee1, e2.FirstName+' ' +e2.LastName as employee2, e1.Title
+    SELECT dt.[employee1], dt.[employee2]
+    from (SELECT e1.FirstName +' '+ e1.LastName as employee1, e2.FirstName+' ' +e2.LastName as employee2, e1.Title
     From dbo.Employees e1 cross join dbo.Employees e2
-    where e1.Title = e2.Title and e1.FirstName != e2.FirstName
+    where e1.Title = e2.Title and e1.FirstName != e2.FirstName) dt
+    where dt.[employee1] > dt.[employee2]
 
 #### 12.Display all the Managers who have more than 2 employees reporting to them.
     SELECT e1.FirstName +' '+ e1.LastName as manager, count(e2.ReportsTo) as [number of employees]
