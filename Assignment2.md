@@ -172,14 +172,17 @@
     having count(distinct(od.ProductID)) >= 2
 
 #### 19. List 5 most popular products, their average price, and the customer city that ordered most quantity of it.
-
-    SELECT top(5) p.ProductName,c.City,sum(od.Quantity)[Quantity],
-    round(avg(od.UnitPrice * (1-od.Discount)),1)[average price]
-    From dbo.Products p join dbo.[Order Details] od on p.ProductID = od.ProductID
-    Join dbo.Orders o on o.OrderID=od.OrderID
-    Join dbo.Customers c on c.CustomerID=o.CustomerID
-    Group BY p.ProductName,c.City
-    ORDER by [Quantity] desc
+    SELECT top(5) ProductID, AVG(UnitPrice) [avgPrice],
+    (select top(1) City
+     from customers c join Orders o on o.customerID = c.customerID
+     join [Order Details] od2 on od2.orderID = o.orderID 
+     where od2.ProductID = od1.ProductID
+     GROUP by city
+     order by sum(quantity) desc
+    ) as City
+    FROM dbo.[Order Details] od1
+    GROUP BY ProductID
+    ORDER BY sum(quantity) desc
 
 #### 20. List one city, if exists, that is the city from where the employee sold most orders (not the product quantity) is, and also the city of most total quantity of products ordere from. (tip: join  sub-query)
 
