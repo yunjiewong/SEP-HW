@@ -11,7 +11,8 @@
     - Unique: constraint the data to be unique, can be many unique constraints in a table
     
 #### 3. Tell me about check constraint
-    - check domain integrity
+    - check constraints enforce  domain integrity by limiting the values that are accepted by a column 
+    
 #### 4.Difference between temp table and table variable
     - Life scope: 
       - temp table can be local or global
