@@ -33,3 +33,16 @@
   - log records produced during the logging process
   - important when recovery
  
+#### CONSTRAINTS (table constraints or column constraints)
+  - NOT NULL
+  - UNIQUE
+  - PRIMARY KEY
+      - Composite primary key is a table constraint    
+  - FOREIGN KEY
+      - ON DELETE
+          - NO ACTION
+          - CASCADE
+          - SET NULL
+          - SET DEFAULT
+  - Check constraints
+  - Check constraints
