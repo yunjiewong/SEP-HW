@@ -111,9 +111,16 @@
 
     DROP TABLE birthday_employees_wang
     DROP PROC sp_birthday_employees_wang
-![Alt text](/../SEP-HW/path/to/image.png?raw=true "Optional Title")
+    
+<img src ="https://github.com/yunjiewong/SEP-HW/blob/main/image.png" width =800 > 
 
-#### 6.      How do you make sure two tables have the same data?
-  
-  
+#### 6. How do you make sure two tables have the same data?
+    If two tables have no duplicates, then just do 
+    SELECT * FROM TABLE1 EXCEPT SELECT * FROM TABLE2 
+    IF there is no error message and return nothing, then two tables have same data and vice versa.
+    
+    If two tables have duplicates, then do
+    TABLE1 UNION TABLE2 EXCEPT TABLE1 INSERTSECT TABLE2
+    IF there is no error message and return nothing, then two tables have same data and vice versa.
+    
   
