@@ -49,8 +49,17 @@
     - Criteria: must have same column number and data type related to that column
     - difference: union all have duplicate rows, union deletes duplicates
  #### 15. Steps you take to improve SQL Queries
+    -  favor set-based logic over precedural or cursor logic
+    -  test Query variations for performance
+    -  avoid Query hints (use Query Optimizer)
+    -  Do not use correlated subqueries to improve performance (use EXISTS)
+    -  avoid using a scalar user-defined function in WHERE clause
+    -  Use table-valued user-defined functions as derived tables
+    -  Avoid unnecessary GROUP BY columns (correlated scalar subquery)
+    -  Use CASE expressions to include variable logic in a query
+    -  Divide joins into temporary tables when you query very large tables
+    -  Refactoring Cursors into Queries
 
-  
  #### 16.concurrency problem in transaction
  
  #### 17.what is deadlock, how to prevent
