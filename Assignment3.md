@@ -111,7 +111,7 @@
 
     DROP TABLE birthday_employees_wang
     DROP PROC sp_birthday_employees_wang
-![Alt text](/../<branch name>/path/to/image.png?raw=true "Optional Title")
+![Alt text](/../SEP-HW/path/to/image.png?raw=true "Optional Title")
 
 #### 6.      How do you make sure two tables have the same data?
   
