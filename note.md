@@ -46,3 +46,28 @@
           - SET DEFAULT: the row referenced by FK will be deleted as well and set default
   - Check constraints
   - Check constraints
+
+#### INTEGRITY
+  - Domain Integrity: check(age>18)
+  - Entity Integrity: PK
+  - Referential Integrity: FK
+
+
+#### Normalization
+   - Database Normalization is a process of organizing data to minimize redundancy
+   - steps
+      - first: all atomic values (not list values) one value one cell, no repeating groups
+      - second: no partial dependency (seperate employee table and manager table)
+      - third: No Transitive Dependency (any column can be generated from other columns)
+
+#### EXCEPTION HANDLING
+    BEGIN TRY
+        SELECT 1/0;
+    END TRY
+    BEGIN CATCH 
+        PRINT ERROR_MESSAGE();
+    END CATCH
+    
+#### IDENTITY 
+   - surrogate key: a unique, primary key
+   - identity(1,3): 1,4,7..
