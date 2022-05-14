@@ -40,9 +40,9 @@
       - Composite primary key is a table constraint    
   - FOREIGN KEY
       - ON DELETE
-          - NO ACTION
-          - CASCADE
-          - SET NULL
-          - SET DEFAULT
+          - NO ACTION: deletion fails with error message
+          - CASCADE: the row referenced by FK will be deleted as well
+          - SET NULL: the row referenced by FK will be deleted as well and set NULL
+          - SET DEFAULT: the row referenced by FK will be deleted as well and set default
   - Check constraints
   - Check constraints
