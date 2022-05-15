@@ -62,8 +62,16 @@
     -  Refactoring Cursors into Queries
 
  #### 16.concurrency problem in transaction
+ - dirty reads
+ - lost update
+ - non-repeatable reads
+ - phantom reads
  
  #### 17.what is deadlock, how to prevent
+    - when two or more processes lock the separate resources. each process cannot continue and wait for others to release the resource
+    - how to prevent:
+        - keep transaction short
+        - Create a covering index to reduce the possibility of a deadlock
  
  #### 18. what is normalization, 1NF - BCNF, benefits using normalization
     - normalization: a process of organizing data to minimize redundancy
