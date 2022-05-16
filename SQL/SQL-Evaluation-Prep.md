@@ -115,8 +115,8 @@
  #### 21. candidate key
     - unique can be used as candidate key
  #### 22.DDL vs. DML --
-    - DDL: data defination Language
-    - DML: data manipulation language
+    - DDL: data defination Language -- create objects in database
+    - DML: data manipulation language -- allow query and modify data
     
  #### 23.ACID property
     - Atomicity: the entire transaction happens at once or never happens at all
