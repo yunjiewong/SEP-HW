@@ -25,3 +25,41 @@
 
 #### 4.Whats the purpose of Garbage Collector in .NET?
   - Garbage Collector is antomatic memory manager, which can release memory automatically, allocate the object on managed heap efficiently
+
+
+
+#### 1.What happens when you divide an int variable by 0?
+  - It results in error message
+
+#### 2.What happens when you divide an double variable by 0?
+  - no error message. It results in Infinity.
+ 
+#### 3.What happens when you overflow an int variable, that is, set it to a value beyond itsrange?
+  - it goes back to negative range
+  
+#### 4. What is the difference between x = y++; and x = ++y;?
+  - ++y is preincrement: y increses before the operation
+  - y++ is postincrement: y increses after the operation
+ 
+#### 5. What is the difference between break, continue, and return when used inside a loop statement?
+  - break: stop iterating the loop
+  - continue: skip current iteration, continue to next one till the iterations end
+  - return: stop current function and return value
+  
+#### 6.What are the three parts of a for statement and which of them are required?
+  - initialization, condition and incrementation
+  
+#### 7. What is the difference between the = and == operators?
+   - "=" assignment operator
+   - "==" comparison operator
+ 
+#### 8. Does the following statement compile? for ( ; true; ) ;
+  - yes, infinite loop
+ 
+#### 9. What does the underscore _ represent in a switch expression?
+  - replaces the default keyword to signify that it should match anything if reached
+  
+#### 10.What interface must an object implement to be enumerated over by using the foreach statement?
+  - IEnumerable
+
+
