@@ -23,20 +23,6 @@
 <h3 align="center"> Part2 </h3>
  #### 1. Copy an array
      
-     int[] array1 = new int[10] {1,2,3,4,5,6,7,8,9,10};
-     int[] array2 = new int[array1.Length];
      
-     for(int i = 0; i < array1.Length; i++)
-     {
-         array2[i] = array1[i];
-     }
-     
-     foreach(int i in array1)
-        Console.Write(i + " ");
-        
-    Console.WriteLine();
-    foreach(int i in array2)
-        Console.Write(i + " ");
-   
    
  
