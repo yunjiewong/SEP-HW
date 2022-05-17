@@ -1,5 +1,7 @@
 <h2 align="center"> Assignment 1</h2>
 
+
+<h3 align="center"> Part 1</h3>
 #### 1.Data Types:
   - A person’s telephone number: int
   - A person’s height: float
@@ -27,12 +29,17 @@
   - Garbage Collector is antomatic memory manager, which can release memory automatically, allocate the object on managed heap efficiently
 
 
+<h3 align="center"> Part 2</h3>
+
 
 #### 1.What happens when you divide an int variable by 0?
   - It results in error message
 
 #### 2.What happens when you divide an double variable by 0?
   - no error message. It results in Infinity.
+
+
+
  
 #### 3.What happens when you overflow an int variable, that is, set it to a value beyond itsrange?
   - it goes back to negative range
@@ -62,4 +69,7 @@
 #### 10.What interface must an object implement to be enumerated over by using the foreach statement?
   - IEnumerable
 
+#### 1.2 Writeline() is not defined, should use Console.WriteLine()
+
+#### 1.3
 
