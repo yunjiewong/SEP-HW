@@ -29,6 +29,9 @@
   - Garbage Collector is antomatic memory manager, which can release memory automatically, allocate the object on managed heap efficiently
 
 
+
+
+
 <h3 align="center"> Part 2</h3>
 
 
@@ -37,8 +40,6 @@
 
 #### 2.What happens when you divide an double variable by 0?
   - no error message. It results in Infinity.
-
-
 
  
 #### 3.What happens when you overflow an int variable, that is, set it to a value beyond itsrange?
@@ -69,7 +70,24 @@
 #### 10.What interface must an object implement to be enumerated over by using the foreach statement?
   - IEnumerable
 
-#### 1.2 Writeline() is not defined, should use Console.WriteLine()
 
-#### 1.3
+<h4 align="center">Code Part </h4>
+#### 1. FizzBuzz
+  - FizzBuzz.cs
+
+#### 2.Print-a-Pyramid
+  - Print_a_PyramidGame.cs
+  
+#### 3.random number
+  - RandomNumberGame.cs
+
+
+#### 4.
+
+#### 5.Write a program that greets the user
+  - Greeting.cs
+
+#### 6.Write a program that prints the result of counting up to 24
+  - CountingGame.cs
+
 
