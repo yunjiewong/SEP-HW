@@ -1,0 +1,15 @@
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/bin/Debug/net6.0/02UnderstandingTypes
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/bin/Debug/net6.0/02UnderstandingTypes.deps.json
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/bin/Debug/net6.0/02UnderstandingTypes.runtimeconfig.json
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/bin/Debug/net6.0/02UnderstandingTypes.dll
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/bin/Debug/net6.0/02UnderstandingTypes.pdb
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/02UnderstandingTypes.csproj.AssemblyReference.cache
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/02UnderstandingTypes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/02UnderstandingTypes.AssemblyInfoInputs.cache
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/02UnderstandingTypes.AssemblyInfo.cs
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/02UnderstandingTypes.csproj.CoreCompileInputs.cache
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/02UnderstandingTypes.dll
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/refint/02UnderstandingTypes.dll
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/02UnderstandingTypes.pdb
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/02UnderstandingTypes.genruntimeconfig.cache
+/Users/yunjiewang/Projects/02UnderstandingTypes/02UnderstandingTypes/obj/Debug/net6.0/ref/02UnderstandingTypes.dll
