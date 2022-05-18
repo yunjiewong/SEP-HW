@@ -15,9 +15,11 @@
 
 
 3. What does a constructor do?
-
+  - a special method of a class or structur that initializes a newly created object of that type
 
 4. Why is the partial keyword useful?
+
+  - 
 
 5. What is a tuple?
 
