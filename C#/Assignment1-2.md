@@ -21,8 +21,26 @@
  - CopyTo() copies the elements into another existing array
 
 <h3 align="center"> Part2 </h3>
- #### 1. Copy an array
+
+#### 1. Copy an array
+  - CopyArray.cs
+
+#### 2.Write a simple program that lets the user manage a list of elements
+
      
-     
+ #### 3. find prime
+  - FindPrime.cs
+#### 4.rotation numbers
+
+#### 5.Write a program that finds the longest sequence of equal elements
+  - LongestSequence.cs
+  
+  
+#### 6.MostFrequent
+  - MostFrequent.cs
+  
+#### 1.reverseString 
+   - reverseString.cs
+
    
  
