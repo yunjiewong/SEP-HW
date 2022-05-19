@@ -12,26 +12,44 @@
   
 
 2. What is the difference between the static, const, and readonly keywords when applied to a type member?
-
+  - constant and readonly are used to make a field constant that cannot be modified
+  - constant is initialized during compile time, readonly is during run-time
+  - static makes members static that can be shared by all class objects
 
 3. What does a constructor do?
   - a special method of a class or structur that initializes a newly created object of that type
 
 4. Why is the partial keyword useful?
-
-  - 
+  - partial is good for splitting the functionality of methods, interface,struct into multiple files
 
 5. What is a tuple?
-
+  - a data structure consists of the multiple parts
 6. What does the C# record keyword do?
+  - record class:  clarify a reference type
+  - record struct to define a value type with similar funcitonality
 
 7. What does overloading and overriding mean?
-
+  - overloading: two or more methods in one class have the same method name but different parameter
+  - overriding: when two methods have same signature
+  
+  
 8. What is the difference between a field and a property?
-
+  - field: variables declared in a class
+  - property: can read, write or compute the value of a field
+  
 9. How do you make a method parameter optional?
+  - set a default value
+  - use method overloading
+  - use optional
+  - use params
+
 10. What is an interface and how is it different from abstract class?
+  - interface: a constract only declaration no implementation
+  - interface can not have constractors, abstract class can
+  - interface can't have fields, but property
+  
 11. What accessibility level are members of an interface?
+  - bu default public
 
 
 12. Polymorphism allows derived classes to provide different implementations
@@ -54,7 +72,7 @@ implementation for all of the members of the interface. F
 21.  A class that implements an interface is allowed to have other members that
 aren’t defined in the interface. T
 22. A class can have more than one base class. F
-23.  A class can implement more than one interface. F
+23.  A class can implement more than one interface. T
 
 
 
