@@ -9,7 +9,8 @@
     can be overloding, not overriding
 6.  static: when member is declared static, it can be accessed with the name with its class directly. store at class level
 7.  virtual method vs. abstract method: virtual has implementation, subclass can override virtual method. 
-8.  a type that represents references to methods with a particular parameter list and return type
+8. The delegate is a reference type data type that defines the method signature
+ a type that represents references to methods with a particular parameter list and return type
      built-in delegates: action return nothing, func return any type, predicate return boolean
 9. access modifier: public, private, protected
 10. extension method: add methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type
