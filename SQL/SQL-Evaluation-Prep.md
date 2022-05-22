@@ -1,6 +1,7 @@
 <h2 align='center'> SQL Evaluation Prep </h2>
 
 #### 1.What is index; types of indices; pros and cons
+    - quick lookup table to find data
     - simply put,index is a pointer to data, to find data in a table without scanning the entire table
     - types: clustered and nonclustered indexes
     - pros: easy retrieval of data
