@@ -71,3 +71,7 @@ deferred execution,immediate excution
 Deferred execution can greatly improve performance when you have to manipulate large data collections.
 
 query variable only store query commands
+
+delegate
+pass 
+handles the callback functions or event handle
