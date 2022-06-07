@@ -88,18 +88,18 @@
      - run cannot call the next middleware, it creates terminal middleware
 
 #### 8.
-app.Use(async (context, next) =>{
-        await context.Response.WriteAsync("This is a middleware 2 \n");
-        next();
-        await context.Response.WriteAsync("Response from middleware 1 \n");
-});
-app.Use(async (context, next) =>{
-        await context.Response.WriteAsync("This is a middleware 2 \n");
-        next();
-        await context.Response.WriteAsync("Response from middleware 2 \n");
-});
-app.Run(async context => {
-         await context.Response.WriteAsync("This is a terminal middleware \n");
-});
-app.Run();
+    app.Use(async (context, next) =>{
+            await context.Response.WriteAsync("This is a middleware 2 \n");
+            next();
+            await context.Response.WriteAsync("Response from middleware 1 \n");
+    });
+    app.Use(async (context, next) =>{
+            await context.Response.WriteAsync("This is a middleware 2 \n");
+            next();
+            await context.Response.WriteAsync("Response from middleware 2 \n");
+    });
+    app.Run(async context => {
+             await context.Response.WriteAsync("This is a terminal middleware \n");
+    });
+    app.Run();
 
