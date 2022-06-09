@@ -21,16 +21,8 @@
       - [Route("api/[controller]")]  ... [HttpGet("{id}")]
  - Model Binding: convert client request data (form values, route data, query string parameters, HTTP headers) into objects that the controller can handle
 
-## 4.Tag Helper
-- enable server-side code to participate in creating and rendering HTML elements in Razor files
-    - asp-controller: generate URL
-    - asp-action: 
-    - asp-route
-    - <label asp-for="Movie.Title"></label>: generate a title 
+
     
-
-
-
 ## 3. View 
   - view helper method: controllers call view helper methods
       - An explicit view to return: return View("Orders");
@@ -64,6 +56,17 @@
     - ViewBag: a dynamic type and skips compile-time checking
          - ViewBag.TotalStudents = studentList.Count();
          - @ViewBag.TotalStudents
+                
+## 4.Tag Helper
+- enable server-side code to participate in creating and rendering HTML elements in Razor files
+    - asp-controller: generate URL
+    - asp-action: 
+    - asp-route
+    - 
+  ```
+  <label asp-for="Movie.Title"></label>
+  ```
+  generate a title 
                 
 
                 
