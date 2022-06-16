@@ -26,8 +26,14 @@
 - Directives: 
   - Components: directives with a template
   - Attribute: change appearance or behavior of a particular elem
-  - Structural directives: change layout of elem
+  - Structural directives: change layout of elem, create/destroy/show/hide
     - *ngIf, *ngFor, *ngSwitch
     
-- interpolation
+- interpolation: {{}}
   - variables in app.component.ts -> app.component.html
+
+
+- what is diff btw AoT(ahead iof time) and JiT (just in time) compiler?
+  - AoT: compile the application at build time 
+  - JiT: compile at run time
+  - AoT runs faster then JiT
