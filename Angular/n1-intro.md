@@ -31,9 +31,12 @@
     
 - interpolation: {{}}
   - variables in app.component.ts -> app.component.html
+  - pipe:
+    - {{birthday | date}}   
 
 
 - what is diff btw AoT(ahead iof time) and JiT (just in time) compiler?
   - AoT: compile the application at build time 
   - JiT: compile at run time
   - AoT runs faster then JiT
+
