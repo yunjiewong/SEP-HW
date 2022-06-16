@@ -1,6 +1,6 @@
 <h2 align="center"> Angular intro</h2>
 
-- Angular: single page application
+
 
 - Installation:
   - npm i -g @angular/cli //install CLI
@@ -8,7 +8,21 @@
   - ng serve //live streaming
   - npm i bootstrap jquery popper --save  //install other dependencies
   
+
+- Angular: single page application using Typescript
+  - TS: Js with strongly data type
+  - module-based 
+  - module: basic block 
+  - to create module: use decorator @Ngmodule({})
   
+- component: the small block used by the modules
+  - a TS class with @component decorator
+  - an html file particulat to the component (template)
+  - a style file (css/scss)
+  - a TS file tp write unit test (spec.ts)
+
+
+
 - Directives: 
   - Components: directives with a template
   - Attribute: change appearance or behavior of a particular elem
