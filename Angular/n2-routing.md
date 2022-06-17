@@ -32,7 +32,32 @@ const routes: Routes = [
         {path:'list', component:ProductListComponent},
         {path:'edit/:id',component:EditProductComponent}
       ]
-    }
+    },
+    {path:'**', component:PageNotFoundComponent},
  ],
 ```
+-
+    - {path:'edit/:id',component:EditProductComponent}
+    - import { ActivatedRoute } from '@angular/router';
+```
+constructor(private activatedRoute:ActivatedRoute) 
+  {   
+      this.activatedRoute.params.subscribe(p=>{
+        this.id = p["id"];
+      });
+  }
 
+```
+
+- one way binding
+    - from component to HTML template 
+        - interpolation: {{ProductName}}
+        - property binding: [value]="ProductName"
+    - from template to component:
+        - event binding: (click)="addProduct()"
+        
+        
+- two way binding
+    -  import FormsModule in the app.modules.ts
+        -  [(ngModule)] = "ProductName"
+         
