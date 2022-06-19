@@ -1,27 +1,13 @@
 <h2 align="center"> Module </h2>
 
 - create a multiple modules and configuration:
-  - ng g m region
-  - cd src/app/region
-  - ng g c add-region
-  - new file: region-routing.module.ts
-```
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { AddRegionComponent } from "./add-region/add-region.component";
-import { ListRegionComponent } from "./list-region/list-region.component";
-
-const routes: Routes=[
-    {path:'list', component:ListRegionComponent},
-    {path:'add', component:AddRegionComponent}
-]
-
-@NgModule({
-    imports:[RouterModule.forChild(routes)]
-})
-export class RegionRoutingModule{
-
-}
-```
-- region.module.ts: import RegionRoutingModule
-- 
+  - 1. create new model: ng g m region 
+  - change directory: cd src/app/region
+  - 2. app.module.ts: imports: RegionModule
+  - 3. create new component: ng g c add-region
+  - 4. create a routing file: region-routing.module.ts
+    - create routes
+    - @ngModel
+    - export class RegionRoutingModule{} 
+  - 5. region.module.ts: import RegionRoutingModule
+  - 6. app-routing.module.ts:  {path:'region', loadChildren: () => import('./region/region.module').then(m=>m.RegionModule) },
