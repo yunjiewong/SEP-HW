@@ -14,6 +14,13 @@
 
 
 - auto
-  - ng g m <moduleName> --route=moduleName-routing --module=app
+  - ng g m <moduleName> --route=moduleName-routing --module=app.module
   
   
+- This way we create modules in a lazy-loading way
+```
+  const routes: Routes = [
+  { path: 'a', loadChildren: () => import('./modulea/modulea.module').then(m => m.ModuleaModule) },
+  { path: 'b', loadChildren: () => import('./moduleb/moduleb.module').then(m => m.ModulebModule) }
+];
+```
