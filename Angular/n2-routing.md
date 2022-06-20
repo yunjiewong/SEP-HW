@@ -63,27 +63,29 @@ constructor(private activatedRoute:ActivatedRoute)
 
 <hr>
 
-<h4>1. interpolation</h4>
+
+-  (1) interpolation
 ```
+    
     <p>{{message}}</p>
     <p>{{messages.id}}</p>
     <p>{{messages.name}}</p>
 ```
-<hr>
-<h4>2. property binding</h4>
+
+- (2). property binding
 ```
 <input type="text" [value]="message"> 
 <button type="button" [disabled]="isUnchanged">Disabled Button</button>
 ```
-<hr>
 
-<h4>3. event binding</h4>
+
+- (3). event binding</h4>
 ```
 
 <button type="button" (click)="ShowMessage()">Click</button>
 ```
-<hr>
-<h4>4.ngModel</h4>
+
+- (4). ngModel
 ```
 <input [(ngModel)]="messages.name">
 ```
