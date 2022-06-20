@@ -11,3 +11,9 @@
     - export class RegionRoutingModule{} 
   - 5. region.module.ts: import RegionRoutingModule
   - 6. app-routing.module.ts:  {path:'region', loadChildren: () => import('./region/region.module').then(m=>m.RegionModule) },
+
+
+- auto
+  - ng g m <moduleName> --route=moduleName-routing --module=app
+  
+  
