@@ -60,4 +60,31 @@ constructor(private activatedRoute:ActivatedRoute)
 - two way binding
     -  import FormsModule in the app.modules.ts
         -  [(ngModule)] = "ProductName"
+
+<hr>
+
+<h4>1. interpolation</h4>
+```
+    <p>{{message}}</p>
+    <p>{{messages.id}}</p>
+    <p>{{messages.name}}</p>
+```
+<hr>
+<h4>2. property binding</h4>
+```
+<input type="text" [value]="message"> 
+<button type="button" [disabled]="isUnchanged">Disabled Button</button>
+```
+<hr>
+
+<h4>3. event binding</h4>
+```
+
+<button type="button" (click)="ShowMessage()">Click</button>
+```
+<hr>
+<h4>4.ngModel</h4>
+```
+<input [(ngModel)]="messages.name">
+```
          
