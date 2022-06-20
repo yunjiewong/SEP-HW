@@ -29,6 +29,20 @@
   - Structural directives: change layout of elem, create/destroy/show/hide
     - *ngIf, *ngFor, *ngSwitch
     
+```
+ <tr *ngFor="let p of products">
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.UnitPrice}}</td>
+</tr>
+
+<div *ngIf="condition; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>Content to render when condition is true.</ng-template>
+<ng-template #elseBlock>Content to render when condition is false.</ng-template>
+
+
+```
+
 - interpolation: {{}}
   - variables in app.component.ts -> app.component.html
   - pipe:
