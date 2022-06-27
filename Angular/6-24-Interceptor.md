@@ -17,14 +17,29 @@ if the token is available and valid, then the user is allowed to access the app.
 
 <hr>
 
+```
 1. install package: Microsoft.AspNetCore.Identity;
 2. Core->Entity->ApplicationUser class -> create prop(firstname, lastname)
-3. infra->data->implement IdentityDbContext<ApplicationUser>
-4. MVC->program.cs-> builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<CrmDbContext>().AddDefaultTokenProviders();
-
+3. infra->data->implemt IdentityDbContext
+4. MVC->program.cs-> builder.Services.AddIdentity<ApplicationUser, IdentityRole>.().
+  AddEntityFrameworkStores<CrmDbContext>().AddDefaultTokenProviders();
+  
 5. add-migration, update-database (several AspNetUsers tables will be created)
-  
-  
+
+```
+
+
+
 <hr>
+
+1. Core->Contract->Repo->IAccountRepositoryAsync
+2. Infra->Repo->AccountRepositoryAsync
+3. builder.Services.AddScoped<IAccountRepositoryAsync, AccountRepositoryAsync>();
+
+<hr>
+
+1. Core->SignupModel
+2. IAccountRepositoryAsync
+3. AccountRepositoryAsync
+4. Core->service->IAccountServiceAsync
   
- 
