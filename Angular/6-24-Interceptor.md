@@ -17,4 +17,14 @@ if the token is available and valid, then the user is allowed to access the app.
 
 <hr>
 
+1. install package: Microsoft.AspNetCore.Identity;
+2. Core->Entity->ApplicationUser class -> create prop(firstname, lastname)
+3. infra->data->implement IdentityDbContext<ApplicationUser>
+4. MVC->program.cs-> builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<CrmDbContext>().AddDefaultTokenProviders();
 
+5. add-migration, update-database (several AspNetUsers tables will be created)
+  
+  
+<hr>
+  
+ 
