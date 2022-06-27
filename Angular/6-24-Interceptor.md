@@ -42,4 +42,6 @@ if the token is available and valid, then the user is allowed to access the app.
 2. IAccountRepositoryAsync
 3. AccountRepositoryAsync
 4. Core->service->IAccountServiceAsync
+5. AccountServiceAsync -> builder.Services.AddScoped()
+
   
