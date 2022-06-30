@@ -34,9 +34,22 @@
 
 
 ##### 6. What is IDisposable interface and it’s dispose method, does it depend on garbage collector and where would you use IDisposable interface?
-
+  - an interface that contains a single method, Dispose()
+  - for releasing unmanaged resources, like files, streams, database connections and so on
+  
 ##### 7. What is Reflection? Give me examples of where you have used Reflection?
+  -  retrieve metadata on types at runtime
+  -  retrieve information on the loaded assemblies and the types defined in them
+
+
 ##### 8. Explain Serialization and how can we achieve XML and JSON serialization
+  - onverting an object into a stream of bytes
+  - JSON serialization serializes the public properties of an object into a string, byte array, or stream 
+  - Use a JsonSerializerOptions object
+  - XML serialization -> XML stream
+  - System.Xml.Serialization contains classes for serializing and deserializing XML
+
+
 ##### 9. Explain different access modifiers in C#?
   - public
   - private
@@ -44,22 +57,29 @@
   - internal
   - protected internal
   - private protected
+
+
 ##### 10.Explain following keywords in C#
   - static
   - var
-  - sealed
+  - sealed: forbidden inheritance
   - const vs readonly
   - ref vs out
-  - yield
+  - yield: use to do custom stateful iteration over a collection
   - record
   - partial
   - try catch finally
-  - using statement and using directive
+  - using statement and using directive:
+      - directive: bring a namespace into scope (StringBuilder sb = new StringBuilder();)
   - abstract
   - override
-  - dynamic
+  - dynamic:  a variable's type can change or that it is not known until runtime
+
+
 #### 11. Explain scenarios where you would use String vs StringBuilder?
-  - stringbuilder for string manipulation
+  - StringBuilder: repeated modifications to a string or concatenate many strings together
+
+
 12. Explain Object-Oriented Concepts (OOPS) in .NET with examples from your project
   - Abstraction
   - Encapsulation
@@ -68,9 +88,12 @@
 
 #### 13. Compare virtual methods and abstract methods?
   - abstract only implementation
+  - 
 #### 14. Differences between overloading and overriding?
-  - overloading method: constructor, 
+  - overloading method: constructor, same method name with different params
   - overriding: same signature
+
+
 #### 15. What are generics and tell me scenarios where you have generics in your projects? What does generic constraints do?
   - generics: any class type
   - generic constraints: for specific class type
