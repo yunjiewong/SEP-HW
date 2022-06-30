@@ -17,44 +17,54 @@
 ##### 3. What is garbage collector? What is its purpose? What are the different generations in garbage collector?
   - an automatic memory manager
   - GC considers unreachable objects garbage and releases the memory allocated for them
-  - f
-  - 
+  - generation 0: short-lived object (temp variables)
+  - generation 1: short-lived object, buffer between short-lived and long-lived 
+  - generation 2: long-lived onject
 
 
 ##### 4. What is the difference between value type and reference type variables? What is boxing and unboxing in reference type variable?
-  - boxing: 
+  - value type: contain the real data 
+  - reference: store reference to the data 
+  - boxing: value type to object type,  to any interface type implemented by this value type
+  - unboxing: extract value type from object
+
+
 ##### 5. What is meant by the terms managed resource and unmanaged resource in .NET
+  - unmanaged resource: not directly under control of gabage collector
+
+
 ##### 6. What is IDisposable interface and it’s dispose method, does it depend on garbage collector and where would you use IDisposable interface?
+
 ##### 7. What is Reflection? Give me examples of where you have used Reflection?
 ##### 8. Explain Serialization and how can we achieve XML and JSON serialization
 ##### 9. Explain different access modifiers in C#?
-● public
-● private
-● protected
-● internal
-● protected internal
-● private protected
+  - public
+  - private
+  - protected
+  - internal
+  - protected internal
+  - private protected
 ##### 10.Explain following keywords in C#
-● static
-● var
-● sealed
-● const vs readonly
-● ref vs out
-● yield
-● record
-● partial
-● try catch finally
-● using statement and using directive
-● abstract
-● override
-● dynamic
+  - static
+  - var
+  - sealed
+  - const vs readonly
+  - ref vs out
+  - yield
+  - record
+  - partial
+  - try catch finally
+  - using statement and using directive
+  - abstract
+  - override
+  - dynamic
 #### 11. Explain scenarios where you would use String vs StringBuilder?
   - stringbuilder for string manipulation
 12. Explain Object-Oriented Concepts (OOPS) in .NET with examples from your project
-● Abstraction
-● Encapsulation
-● Inheritance
-● Polymorphism
+  - Abstraction
+  - Encapsulation
+  - Inheritance
+  - Polymorphism
 
 #### 13. Compare virtual methods and abstract methods?
   - abstract only implementation
