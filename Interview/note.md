@@ -32,3 +32,9 @@ We used dependency injection to inject repositories into services, services into
 We used Microsoft asp.net core Identity for authentication and authorization
 
 we used jwt token based authentication to verify the request and token was stored in the local storage at cleint side and sent back in every http request
+
+
+
+we wrote asynchornous programming using task in .net core and consumed the apis using httpclient service of the angular
+
+
