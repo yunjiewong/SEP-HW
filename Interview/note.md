@@ -37,4 +37,13 @@ we used jwt token based authentication to verify the request and token was store
 
 we wrote asynchornous programming using task in .net core and consumed the apis using httpclient service of the angular
 
+after calling services api we used angular observable and shared the data with components
+
+we were a team of 10 people
+5 full stack developers, 1 team lead, 1 project manager, 1 Qa, 2 front end developers
+
+
+1. self introduction 
+2. project detail
+3. what is DI? What are the benefits? How did you implement it? What is the difference netween AddScoped, AddTransient, AddSingleton
 
