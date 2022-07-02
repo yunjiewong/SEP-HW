@@ -169,20 +169,30 @@ Var query= from a
   - asynchronous programming for fast computution
   
 #### 28. Do you know how can we make HTTP Requests in C#? Can you explain what c is?
-  - HTTP works as a request-response protocol between a client and server. Example: A client (browser) sends an HTTP request to the server; then the server returns a response to the client.
   - the client uses components of a URL to make a request, 
   - request methods: get, post, delete, put, patch
-  - IHttpContextAccessor
+  - IHttpContextAccessor: accessing HttpContext property
+  
 #### 29. Difference between Task vs Thread vs Process
+ - process: when a program is executed
+ - task: run them asynchronously
+ - A Thread is a lower-level implementation while a Task is a higher-level implementation
 
 #### 30. What does lock keyword does? Give me example of it where you have used?
+ - one thread does not enter a critical section of code while another thread is in the critical section
+ - Synchronization -lock the shared resouces
 
 #### 31. Can you tell difference between Task.WhenAll and Task.WhenAny?
-
+ - WhenAll returns control after all tasks are completed, while WhenAny returns control as soon as a single task is completed.
+ 
 #### 32. What’s is the purpose of ConfigureAwait() ?
+ - avoid forcing the callback to be invoked on the original context or scheduler. 
+ - This has a few benefits: Improving performance
 
 #### 33. What’s the difference between asynchronous programming and Multithreaded programming?
-
+ - Asynchronous programming is about the asynchronous sequence of Tasks
+ - multithreading is about multiple threads running in parallel. 
+ - independent tasks multithrading 
 <hr>
 
 #### ASP.NET Core
