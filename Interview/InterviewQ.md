@@ -88,48 +88,91 @@
 
 #### 13. Compare virtual methods and abstract methods?
   - abstract only implementation
-  - 
+  - virtual:  indication to the compiler that a method may be overridden 
+  
+  
 #### 14. Differences between overloading and overriding?
   - overloading method: constructor, same method name with different params
   - overriding: same signature
 
 
 #### 15. What are generics and tell me scenarios where you have generics in your projects? What does generic constraints do?
-  - generics: any class type
-  - generic constraints: for specific class type
-  - 
-#### 16. What is the difference between a generic and a non-generic collection? What are the different collection classes in C#?
+  - Allow type to be a parameter
+  - generics: write a class or method that can work with any data type
+  - generic constraints: for specific data type (where T: struct)
+
+ 
+#### 16. What is the difference between a generic and a non-generic collection? What are the different collection classes in C
+  - Generic collections are strongly typed  
   - non-generic collection: arraylist
-  - generic collection: array list
+  - generic collection: list, dict, stack, queue
   
 #### 17. Why do you think we need an abstract class, why do you need an interface? Give few examples, where you have used abstract classes and interfaces in your project.
   - hide the actual implementation
 
 #### 18. What are extension methods and give me examples of built-in extension methods. Have you created an extension method in your project? If yes, how with examples?
+  - Add methods to existing types without creating a new derived type, recompling, or modified the original type
+  - they are static method.
+
 
 #### 19. What are lambda expressions, where have u used lambda expressions
-  - simplify the code
-  - 
+  - Define inline implementation of a functional interface
+  -  a short form for writing an anonymous class
+  
 #### 20. Tell what is LINQ? And give me scenarios where you have used LINQ in your projects.
+  - Language integrated Query
+  - Query database on  c#
 
 
 #### 21. Differed Execution and immediate execution in LINQ?
+  - Differed execution: the query is actually executed when the query variable is created
+  - .count(), toList(), toArray() -> immediate execution
+  
 #### 22. Write LINQ, GroupBy, Join, and Where conditions.
+
+  - Query syntax and method syntax
+```    
+Var query= from a 
+	Join b
+  Where…
+	Groupby 
+	select
+```
+
+
 #### 23. Differences between First, FirstOrDefault, Single, SingleOrDefault in LINQ
-  - 
+  - First(): return first elem in collection, exception if no result is returned
+  - FirstOrDefault(): same as First(), but not thrown any exception when no result
+  - Select Top 1
+  
+  - Single(): return exactly one elem, exception when no result or more than 1 results
+  - SingleOrDefault(): same as Single(), but it handle the null value
+  - select...
+  
 #### 24. Anonymous types and methods
-  - new {}
+  - var v = new {}
+  - anonymous methods peovide a technique to pass a code block as a delegate parameter
+  - lambda expression as a simple, more concise, functional syntax to write AM.
   
 #### 25. What are delegates in .NET, and can you tell differences between Func, Action and Predicate.
+  - delegate: pass methods as parameter
   - different return types: Action null, func returns any, predicate returns boolean
 
 
 #### 26. What is difference between IEnumerable and IQueryable
-  - 
+  -  IQueryable queries out-of-memory data stores
+  -  IEnumerable queries in-memory data
+  -  IQueryable is part of . NET's System. LINQ namespace
+  -  IEnumerable is in System.
+  
 #### 27. Explain async and await keywords in C#. Give me scenarios where you have you used in your projects?
   - asynchronous programming for fast computution
-  - 
-#### 28. Do you know how can we make HTTP Requests in C#? Can you explain what IHttpContextAccessor is?
+  
+#### 28. Do you know how can we make HTTP Requests in C#? Can you explain what c is?
+  - HTTP works as a request-response protocol between a client and server. Example: A client (browser) sends an HTTP request to the server; then the server returns a response to the client.
+  - the client uses components of a URL to make a request, 
+  - request methods: get, post, delete, put, patch
+  - IHttpContextAccessor
 #### 29. Difference between Task vs Thread vs Process
 
 #### 30. What does lock keyword does? Give me example of it where you have used?
