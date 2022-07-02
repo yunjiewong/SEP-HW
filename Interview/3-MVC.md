@@ -11,14 +11,24 @@
   
 #### 2. Explain various action results in MVC.
 
-- IActionResult 
+- view result
+- partial view result
+- Redirect Result
+- Redirect To Action Result
+- Redirect To Route Result
+- Json Result
+- File Result
+- Content Result
 
+```
+public ViewResult About()  
+       {  
+            ViewBag.Message = "Your application description page.";  
+            return View();  
+  
+       }  
+```
 
-
-  
-  
-  
-  
 #### 3. How do you pass data from Controller to View and from View to Controller?
   - ViewModel 
   - ViewBag
