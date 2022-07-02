@@ -1,17 +1,24 @@
 
-<h2 align="center"> MVC</h2>
+<h2 align="center"> MVC </h2>
 
 #### 1. What are all the advantages of MVC?
-  - jk
+- divide the application Model, Control and View
+- flexiability
+- easy maintanence
+- default template
   
-  - divide the application Model, Control and View
-  - flexiability
-  - easy maintanence
-  - default templat
- 
+  
   
 #### 2. Explain various action results in MVC.
-  - IActionResult 
+
+- IActionResult 
+
+
+
+  
+  
+  
+  
 #### 3. How do you pass data from Controller to View and from View to Controller?
   - ViewModel 
   - ViewBag
