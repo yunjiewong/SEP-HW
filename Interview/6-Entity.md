@@ -1,8 +1,23 @@
-<hr>
+<h2 align="center"> Entity Framework/ORM/Dapper </h2>
 
-#### Entity Framework/ORM/Dapper
+
 #### 1. What is an ORM? What are the advantages of Entity Framework over ado .net ?
+     ORM: object relational mapping.
+     Entity Framework: it handles the database operations with less time and less effort.
+     Its fast and straight forward using LINQ/FE objects For Add/Modify/Delete/Update.
+     
 #### 2. Disadvantages of EF and how would you improve the performances of EF?
+
+      Lazy loading is the main drawbacks of EF. 
+      Its syntax is complicated. 
+      Its logical schema is not able to understand business entities and relation among each other.
+      Logical schema of database is not capable of using certain parts of application.
+      
+     Avoid to put all the DB Objects into One Single Entity Model.
+     Disable change tracking for entity if not needed
+     Use Pre-Generating Views to reduce response time for first request
+
+
 #### 3. What are the different approaches you can use in EF and which approach did you use & why?
 #### 4. Do you have experience with any other ORMs such as Dapper?
 #### 5. Explain what are main differences between Dapper and Entity Framework and which one would you prefer in what scenarios?
@@ -16,4 +31,3 @@
 #### 13. What will Entity Framework return IQueryable or IEnumerable?
 #### 14. How do you disable lazy loading in Entity Framework and what is the use of virtual keyword?
 
-<hr>
