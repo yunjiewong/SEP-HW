@@ -27,7 +27,7 @@
     <footer>
 
 #### 6. Tell some of the tabs you know in Chrome Developer tools and what can you do with those?
-
+      element, console, 
 #### 7. What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
 #### 8. Have you used Bootstrap and why?
 #### 9. Explain Bootstrap Gris system?
