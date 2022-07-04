@@ -25,19 +25,28 @@
     contains declarations, imports, providers, and bootstrapping
 
 #### 6. How you pass data from a parent component to a child component and vice versa and between unrelated Components?
+     @Input() lets a parent component update data in the child component.
+     @Output() lets the child send data to a parent component.
+
+      Unrelated Components via a Service.
 
 
 #### 7. Explain Angular Life cycle hooks with difference between ngOnInit and constructor.
+
 #### 8. What is angular View encapsulation?
+
 #### 9. What are directives, difference between structural directives and attribute directives?
-#### Structural Directives
-#### ● ngFor
-#### ● ngIf
-#### ● ngSwitch
-#### Attribute Directives
-#### ● ngClass
-#### ● ngStyle
-#### ● ngModel
+
+- Structural Directives
+   -  ngFor
+   -  ngIf
+   -  ngSwitch
+- Attribute Directives
+   - ngClass
+   - ngStyle
+   - ngModel
+
+
 #### 10. Difference between Template-driven forms and Reactive forms?
 #### 11. How do you submit a form?
 #### 12. What is the difference between NgForm, FormGroup and FormControl? How do they work together?
