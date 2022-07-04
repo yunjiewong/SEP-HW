@@ -1,11 +1,32 @@
 
-#### Angular
+<h2 align="center"> Angular</h2>
+
+
 #### 1. What is Single Page Application?
+      Web app that is presented to the user through a single HTML page to be more responsive and 
+      to more closely replicate a desktop application or a native app.
+      
 #### 2. What is typescript and how is it different from JavaScript?
+    strongly typed programming language that builds on JavaScript,
+    giving you better tooling at any scale.
+    
 #### 3. How do you create a two-way binding in Angular?
+    ngModel
+    Reactice form
+    
 #### 4. Did you use commands on angular CLI or only build and deployment? Which commands you have used in angular CLI?
+    ng serve
+    ng g n service/component 
+    ng test
+
 #### 5. What is the purpose of NgModule?
+    organize the application, extend functionality from external libraries,
+    and configure the compiler and injector
+    contains declarations, imports, providers, and bootstrapping
+
 #### 6. How you pass data from a parent component to a child component and vice versa and between unrelated Components?
+
+
 #### 7. Explain Angular Life cycle hooks with difference between ngOnInit and constructor.
 #### 8. What is angular View encapsulation?
 #### 9. What are directives, difference between structural directives and attribute directives?
