@@ -137,13 +137,41 @@
        provide an ErrorHandler class
 #### 24. What is router-outlet directive in Angular? Explain how routing works in Angular and what are Route Guards? What’s the difference between CanActivate and CanLoad ?
       insert the component matched by routes to be displayed on the screen
+      
+      Angular's route guards are interfaces which can tell the router whether or not it should allow navigation to a requested route
+      
+      canActivate exists to prevent unauthorized users from accessing a route, 
+      canLoad is used to prevent the application from loading an entire module 
+      or component in a lazy way (lazy loading) if the user is not authorized
 
 #### 25. What are Observables? Where did you use them, explain forkJoin, combinelatest, mergemap operators in relation with Http and Angular?
+      Observables provide support for passing messages between parts of your application.
+
+
 #### 26. Explain difference between Promise and Observable.
+      Both observables and promises help us work with asynchronous functionality in JavaScript.
+      Promises deal with one asynchronous event at a time
+      observables handle a sequence of asynchronous events over a period of time.
+
 #### 27. Do you what is Subject, BehaviorSubject ?
+
+      In Subject, the subscribers will only receive the upcoming value. 
+      In BehaviorSubject, the subscribers will receive the previous value and also upcoming value.
+
 #### 28. Explain the Authentication process in your Angular application that includes JWT, Route Guards etc.
+      Step 1 - The Login Page
+      Step 2 - Creating a JWT-based user Session
+      Step 3 - Sending a JWT back to the client
+      Step 4 - Storing and using the JWT on the client side
+      Step 5 - Sending The JWT back to the server on each request
+      Step 6 - Validating User Requests
+      
+      
 #### 29. How to improve the performance of Angular application, details of lazy loading, prefetch strategy, AOT etc.
+
 #### 30. In your Angular application what did you do to display large amounts of Tabular data? Explain any third-part libraries you have used for table data and pagination
+      ngx-datatable is an Angular component for presenting large and complex data.
 #### 31. What are your favorite 3rd party libraries in Angular ?
 #### 32. Have you used ngx-charts and ngx-datatable in Angular?
+
 #### 33. ngx-toastr, ngx-progressbar ?
