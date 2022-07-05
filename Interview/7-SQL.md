@@ -1,4 +1,6 @@
-#### SQL
+<h2 align="center">SQL</h2>
+
+
 #### 1. Explain about your database design, were you involved in designing your database? What should you concern when designing database and tables?
 #### 2. Can you explain about Normalization, especially 3NF and how it is helpful? Tell me scenarios where De Normalization is useful?
 #### 3. When you opt stored procedure and when you opt function? Differences between them?
