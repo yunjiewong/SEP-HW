@@ -60,31 +60,81 @@
 
 #### 9. What are directives, difference between structural directives and attribute directives?
 
-            add additional behavior to elements in your Angular applications.
+        add additional behavior to elements in your Angular applications.
+        Attribute Directives: Change the appearance or behavior of an element, component, or another directive.
+        Structural Directives: Change the DOM layout by adding and removing DOM elements.
 - Structural Directives
-   -  ngFor
-   -  ngIf
-   -  ngSwitch
+   -  ngFor: Repeat a node for each item in a list.
+   -  ngIf: Conditionally creates or disposes of subviews from the template.
+   -  ngSwitch: A set of directives that switch among alternative views.
 - Attribute Directives
-   - ngClass
-   - ngStyle
-   - ngModel
+   - ngClass: Adds and removes a set of CSS classes.
+   - ngStyle: Adds and removes a set of HTML styles.
+   - ngModel: Adds two-way data binding to an HTML form element.
 
 
 #### 10. Difference between Template-driven forms and Reactive forms?
+      static vs. dynamic form.
+      Template-driven: ngModel to data binding
+      Reactive: FormGroup, FormController for data binding
+      
 #### 11. How do you submit a form?
+      (submit)
+
 #### 12. What is the difference between NgForm, FormGroup and FormControl? How do they work together?
+      FormGroup is used with FormControl to track the value and validate the state of form control.
+      
+      ngForm = Template-Driven = asynchronous 
+      FormGroup = Reactive Form = synchronous
+      
+      
 #### 13. What is the difference between dirty, touched, and pristine on a form element?
+      valid: This property returns true if the element’s contents are valid and false otherwise.
+      invalid: This property returns true if the element’s contents are invalid and false otherwise.
+
+      pristine: This property returns true if the element’s contents have not been changed.
+
+      dirty: This property returns true if the element’s contents have been changed.
+      untouched: This property returns true if the user has not visited the element.
+      touched: This property returns true if the user has visited the element.
+
 #### 14. How can you access validation errors in the template to display error messages?
+      use ngIf directive to dectect elements' status
+      <div *ngIf="myForm.controls['username'].invalid>  ....</div>
+      
 #### 15. What is Async validation and how is it done?
+      the async version returns an Observable of the the same object
+      async Validators is doing a server validation via an HTTP Callback
+      
 #### 16. What is the purpose of using ngx-bootstrap or ng-bootstrap?
+           both are wrappers on regular bootstrap to support UI components in Angular applications. 
+           
 #### 17. How did you organize your Angular project? Explain the folder structure etc?
+      app: components
+      enviroment: API key
+      guard: authentication guards
+      interceptor: token interceptor
+      interface: all properties of class
+      services: for CRUD operations
+      
 #### 18. Give me examples of built-in directives and custom directives you created
+
 #### 19. What’s the purpose of pipe and how do you create custom pipes with examples from your project?
+      transform strings, currency amounts, dates, and other data for display. 
+
 #### 20. Explain Angular Interceptors and their use case.
+      intercept all the request and response calls and modify them to our requirement.
 #### 21. What is an Angular Service? What are the features of Angular Service?
+      objects that get instantiated just once during the lifetime of an application.
+      They contain methods that maintain data throughout the life of an application, 
+      i.e., data is available all the time
+      
+
 #### 22. How do you make Ajax calls in Angular (HttpClient in angular)?
+      Ajax: Asynchronous JavaScript and XML
+
 #### 23. How did you handle exceptions in your Angular application?
+       provide an ErrorHandler class
 #### 24. What is router-outlet directive in Angular? Explain how routing works in Angular and what are Route Guards? What’s the difference between CanActivate and CanLoad ?
 #### 25. What are Observables? Where did you use them, explain forkJoin, combinelatest, mergemap operators in relation with Http and Angular?
 #### 26. Explain difference between Promise and Observable.
