@@ -136,6 +136,8 @@
 #### 23. How did you handle exceptions in your Angular application?
        provide an ErrorHandler class
 #### 24. What is router-outlet directive in Angular? Explain how routing works in Angular and what are Route Guards? What’s the difference between CanActivate and CanLoad ?
+      insert the component matched by routes to be displayed on the screen
+
 #### 25. What are Observables? Where did you use them, explain forkJoin, combinelatest, mergemap operators in relation with Http and Angular?
 #### 26. Explain difference between Promise and Observable.
 #### 27. Do you what is Subject, BehaviorSubject ?
