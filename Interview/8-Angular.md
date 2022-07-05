@@ -32,8 +32,31 @@
 
 
 #### 7. Explain Angular Life cycle hooks with difference between ngOnInit and constructor.
+     constructor: default method (do DI on Constructor )
+     ngOnInit: Angular is done creating the component
+     
+     Constructor(DI)
+         - ngOnChanges(): set or reset data properties
+         - ngOnInit(): initialize
+         - ngDoCheck(): 
+                  - ngAfterContentInit()
+                  - ngAfterContentChecked()
+                  - ngAfterViewInit()
+                  - ngAfterView Checked()
+         - ngOnDestroy()
+     
+
 
 #### 8. What is angular View encapsulation?
+      View encapsulation defines whether the template and styles defined within the component can affect the whole application or vice versa.
+      @Component({
+            encapsulation: ViewEncapsulation.None;
+       })
+       
+       Emulated (default): styles from main HTML propagate to the component
+       ShadowDom - styles from main HTML do not propagate to the component
+       None - styles from the component propagate back to the main HTML and therefore are visible to all components on the page.
+       
 
 #### 9. What are directives, difference between structural directives and attribute directives?
 
