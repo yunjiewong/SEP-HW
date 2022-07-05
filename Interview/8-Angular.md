@@ -60,6 +60,7 @@
 
 #### 9. What are directives, difference between structural directives and attribute directives?
 
+            add additional behavior to elements in your Angular applications.
 - Structural Directives
    -  ngFor
    -  ngIf
