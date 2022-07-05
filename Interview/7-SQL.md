@@ -33,9 +33,15 @@
 #### 14. What is the difference Between Union and Union all?
 #### 15. What is a group by clause?
 #### 16. Have used @@Error and @@Rowcount?
+     @@ERROR is checked for any indication of an error
+     @@ROWCOUNT is used to ensure that the update was successfully applied to a row in the table
+     
+     
 #### 17. How can you handle exceptions in SQL statements and Stored Procedures?
 #### 18. Do you know what is execution plan and how do you analyze it ?
+        
 #### 19. Any experience with SQL Profiler and Database Tuning Advisor?
+
 #### 20. How would you perform pagination with Stored Procedures (SQL Statements)?
 #### 21. Explain all the steps for Performance Tuning of a query?
 
