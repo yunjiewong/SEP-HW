@@ -86,3 +86,14 @@
 
        Authentication verifies the identity of a user or service,
        and authorization determines their access rights
+       
+       
+       
+       
+## Solid principles
+Single responsibility: one class have only one job to do
+Open-closed: a class is open for extension and closed for modification
+Liskov substitution: a derived class must be substitutable for its base class.
+Interface segregation: segregate huge inteface to be simle
+dependency inversion: high-level modules/classes should not depend on low-level modules/classes
+
