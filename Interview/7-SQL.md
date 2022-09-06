@@ -4,6 +4,10 @@
     relations
 
 #### 2. Can you explain about Normalization, especially 3NF and how it is helpful? Tell me scenarios where De Normalization is useful?
+  process of organizing data in a database
+  1NF : atomic value
+  
+  https://www.javatpoint.com/dbms-normalization
   
 #### 3. When you opt stored procedure and when you opt function? Differences between them?
     In a function, it is mandatory to use the RETURNS and RETURN arguments
@@ -12,6 +16,7 @@
     In few words, a stored procedure is more flexible to write any code that you want
     while functions have a rigid structure and functionality.
     
+    function is for calculation, sp can query and calculation purpose
     
 #### 4. Differences between truncate and delete?
     truncate is faster
